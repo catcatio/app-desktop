@@ -1,0 +1,30 @@
+{
+  "name": "catcat",
+  "version": "0.1.0",
+  "description": "A minimal price watch app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "katopz",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-builder": "^19.52.1"
+  },
+  "dependencies": {
+    "@rabbotio/fetcher": "^1.0.4"
+  },
+  "directories": {
+    "buildResources ": "assets"
+  },
+  "build": {
+    "appId": "io.rabbot.catcat",
+    "mac": {
+      "category": "util"
+    }
+  }
+}
